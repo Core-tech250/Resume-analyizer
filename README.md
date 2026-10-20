@@ -1,8 +1,8 @@
 # Explainable, Anonymized Resume Shortlisting System
 
-[![CI - Resume Shortlisting System](https://github.com/CodeBhavyaG/SIH-Hackathon/actions/workflows/ci.yml/badge.svg)](https://github.com/CodeBhavyaG/SIH-Hackathon/actions)
+[![CI - Resume Shortlisting System](https://github.com/Core-tech250/Resume-analyizer/actions/workflows/ci.yml/badge.svg)](https://github.com/Core-tech250/Resume-analyizer/actions)
 ![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)
-![Status](https://img.shields.io/badge/status-All%204%20Phases%20Complete%20(26%2F26%20Tests)-success.svg)
+![Status](https://img.shields.io/badge/status-Production%20Ready-success.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 > **A decision-support platform that ranks resumes against a job profile and keeps HR firmly in control of interviews and the final hiring decision.**
@@ -26,18 +26,7 @@ The system reads resumes in multiple formats (PDF, DOCX, TXT), compares them sem
 
 ---
 
-## 2. 4-Phase Roadmap & Delivery Status
-
-| Phase | Duration | Focus Area | Deliverables & Status |
-|---|---|---|---|
-| **Phase 1: Foundation and MVP** | Weeks 1–2 | Ingestion & Baseline Ranking | Multi-format parser, DB persistence, Cosine similarity ranker, FastAPI endpoints, Streamlit UI. **(COMPLETED ✅)** |
-| **Phase 2: Anonymization & Scoring** | Weeks 3–4 | Fairness & Redaction | PII / College redaction layer, structured JSON extraction, synonym-aware multi-factor scoring, adjustable weights, and 100% passing automated bias tests. **(COMPLETED ✅)** |
-| **Phase 3: Explainability & HR Flow** | Weeks 5–6 | Recruiter Usability | Grounded strengths/gaps breakdown, HR manual decision overrides & notes, unmasking safety gate, tailored interview question generator, CSV & ReportLab PDF export. **(COMPLETED ✅)** |
-| **Phase 4: Scale, Eval & Deploy** | Weeks 7–8 | Production & Verification | Empirical evaluation on 60 labeled benchmark resumes achieving **90.0% top-10 agreement**, embedding cache, multi-company RBAC, automated data retention, Docker containers. **(COMPLETED ✅)** |
-
----
-
-## 3. Competitor Positioning
+## 2. Competitor Positioning
 
 | Capability | Legacy ATS (Workday, Taleo) | AI Interviewers (HireVue) | **Our Platform** |
 |---|---|---|---|
@@ -49,7 +38,7 @@ The system reads resumes in multiple formats (PDF, DOCX, TXT), compares them sem
 
 ---
 
-## 4. Empirical Evaluation Results (Phase 4.1)
+## 3. Empirical Evaluation Results
 
 Evaluated across **60 labeled resumes** spanning 3 distinct technical job profiles:
 
@@ -63,12 +52,12 @@ Lead Frontend React Engineer                  | 20      | 90.0%            | 90.
 OVERALL EMPIRICAL BENCHMARK                   | 60      | 90.0%            | 90.0%        | 0.984
 ```
 
-### Verified Resume Bullet (Section 9):
+### Verified Resume Bullet:
 > *"Built and deployed an explainable, anonymized resume-shortlisting platform (FastAPI, sentence-transformers, LLM) that ranks candidates on education, experience, projects and skills without using college name or personal identifiers; achieved 90.0% top-10 agreement with recruiter shortlists on 60 resumes while keeping interviews and final decisions with HR."*
 
 ---
 
-## 5. System Architecture
+## 4. System Architecture
 
 ```mermaid
 flowchart TD
@@ -100,7 +89,7 @@ flowchart TD
 
 ---
 
-## 6. Quick Start Guide
+## 5. Quick Start Guide
 
 ### Option 1: Run with Python Virtual Environment
 ```powershell
@@ -125,43 +114,43 @@ docker compose up --build
 
 ---
 
-## 7. Run Empirical Benchmark & Automated Tests
+## 6. Run Empirical Benchmark & Automated Tests
 
 ### Run the Evaluation Benchmark CLI:
 ```powershell
 python run_evaluation.py
 ```
 
-### Run Full Test Suite (26 Tests Across All 4 Phases):
+### Run Full Test Suite:
 ```powershell
 pytest tests/resume_shortlister -v
 ```
 
 ---
 
-## 8. Project Structure
+## 7. Project Structure
 
 ```text
-reume builder/
+Resume-analyizer/
 ├── .github/workflows/ci.yml       # GitHub Actions automated CI
 ├── Dockerfile                     # Multi-stage production container
 ├── docker-compose.yml             # Container orchestration
 ├── sample_resumes/                # 5 diverse candidate resumes (PDF, DOCX, TXT)
 ├── src/resume_shortlister/
 │   ├── config.py                  # Pydantic v2 application settings
-│   ├── anonymizer/                # Phase 2: Redaction & skill synonym dictionary
-│   ├── auth/                      # Phase 4: Multi-company tenant workspaces & RBAC
-│   ├── cache/                     # Phase 4: Embedding cache & batch processor
+│   ├── anonymizer/                # Redaction & skill synonym dictionary
+│   ├── auth/                      # Multi-company tenant workspaces & RBAC
+│   ├── cache/                     # Embedding cache & batch processor
 │   ├── db/                        # SQLAlchemy database models & auto-migrations
-│   ├── evaluation/                # Phase 4: 60-resume benchmark & metrics engine
-│   ├── explainability/            # Phase 3: Strengths/gaps & interview generator
-│   ├── parsers/                   # Phase 1: PDF, DOCX, OCR, structured extractor
-│   ├── privacy/                   # Phase 4: Data retention purge & safe logger
+│   ├── evaluation/                # 60-resume benchmark & metrics engine
+│   ├── explainability/            # Strengths/gaps & interview generator
+│   ├── parsers/                   # PDF, DOCX, OCR, structured extractor
+│   ├── privacy/                   # Data retention purge & safe logger
 │   ├── ranking/                   # Multi-factor scorer & cosine similarity ranker
-│   ├── reporting/                 # Phase 3: CSV & ReportLab PDF report generators
+│   ├── reporting/                 # CSV & ReportLab PDF report generators
 │   ├── api/                       # FastAPI backend & routes
 │   └── ui/                        # Streamlit recruiter dashboard
-├── tests/resume_shortlister/      # 26 Unit & integration tests
+├── tests/resume_shortlister/      # Unit & integration tests
 ├── run_api.py                     # 1-click backend launcher
 ├── run_ui.py                      # 1-click frontend launcher
 ├── run_evaluation.py              # 1-click evaluation benchmark CLI
