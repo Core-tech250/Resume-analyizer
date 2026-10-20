@@ -1,0 +1,17 @@
+.env
+.env.*
+!/configs/.env.example
+__pycache__/
+*.pyc
+*.egg-info/
+*.egg
+build/
+dist/
+.pytest_cache/
+.venv/
+uv.lock
+scripts/setup.sh
+resumes.db
+uploads/
+.cph/
+*.exe

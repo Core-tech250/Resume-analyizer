@@ -1,0 +1,17 @@
+Jordan Taylor - Junior Software Developer
+Summary:
+Motivated junior software engineer with 1 year of internship experience and strong fundamentals in computer science.
+Technical Skills:
+- Languages: Java, Python, C++, HTML, SQL
+- Frameworks: Spring Boot basics, basic Flask
+- Tools: Git, GitHub, VS Code, Linux
+Experience:
+Software Engineering Intern | TechStart Solutions (2025)
+- Assisted in maintaining backend services written in Java and Python.
+- Wrote unit tests and fixed bugs in internal REST API endpoints.
+- Maintained documentation and performed database data migrations using basic SQL.
+Academic Projects:
+- Library Management System in Python and SQLite
+- Student Portal using Java Spring Boot
+Education:
+Bachelor of Science in Computer Science (2025)

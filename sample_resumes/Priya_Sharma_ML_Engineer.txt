@@ -1,0 +1,17 @@
+Priya Sharma - Machine Learning & NLP Specialist
+Summary:
+Data Scientist and AI Engineer with 4 years of experience specializing in NLP, sentence embeddings, and Python architectures.
+Technical Skills:
+- Machine Learning / AI: PyTorch, Scikit-learn, HuggingFace, NLP, Sentence-Transformers, Vector DBs
+- Backend: Python, FastAPI, REST APIs, SQL, Pandas, NumPy
+- Cloud & Infrastructure: Docker, AWS, Git, MLflow
+Experience:
+Machine Learning Engineer | Cortex Labs (2023 - Present)
+- Deployed semantic search and ranking engine using sentence-transformers and FAISS vector index.
+- Developed FastAPI wrapper services to serve real-time model predictions with <50ms latency.
+- Authored automated evaluation pipelines measuring top-10 ranking accuracy and NDCG.
+Data Scientist | Optima Analytics (2021 - 2023)
+- Trained classification and regression models in Python using scikit-learn and PyTorch.
+Education:
+Master of Science in Artificial Intelligence (2021)
+Bachelor of Technology in Information Technology (2019)

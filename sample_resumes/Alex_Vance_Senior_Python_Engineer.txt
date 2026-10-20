@@ -1,0 +1,16 @@
+Alex Vance - Senior Software Engineer
+Summary:
+Backend developer with 6 years of experience building resilient microservices and distributed APIs.
+Technical Skills:
+- Languages & Frameworks: Python, FastAPI, Django, Flask, SQL, Bash
+- Databases & Queues: PostgreSQL, Redis, SQLAlchemy, RabbitMQ
+- DevOps & Tools: Docker, Kubernetes, Git, CI/CD, Linux, AWS
+Experience:
+Senior Backend Developer | NovaCloud (2022 - Present)
+- Architected and deployed 15+ FastAPI microservices handling 25M daily requests.
+- Implemented PostgreSQL schema optimizations reducing query latency by 45%.
+- Integrated machine learning inference endpoints using Docker and Redis caching.
+Backend Engineer | DataSphere (2019 - 2022)
+- Built scalable REST APIs using Python and Flask with comprehensive automated unit testing.
+Education:
+Bachelor of Science in Computer Science (2019)

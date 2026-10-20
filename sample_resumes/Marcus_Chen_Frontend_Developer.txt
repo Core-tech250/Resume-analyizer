@@ -1,0 +1,16 @@
+Marcus Chen - Senior Frontend Engineer
+Summary:
+Creative UI/UX and Frontend engineer with 5 years crafting responsive, interactive web applications.
+Technical Skills:
+- Frontend: React, Next.js, TypeScript, JavaScript, HTML5, CSS3, TailwindCSS, Redux Toolkit
+- UI Libraries: Material UI, Shadcn, Chakra UI, Framer Motion
+- Tools: Vite, Webpack, Figma, Jest, Cypress, Git
+Experience:
+Senior Frontend Developer | PixelCraft Studio (2022 - Present)
+- Built enterprise design system and dashboard widgets used by 500,000 monthly active users.
+- Migrated legacy frontend codebase to React 18 and Next.js, improving Core Web Vitals by 35%.
+- Integrated REST APIs and GraphQL endpoints with client-side optimistic UI updates.
+Frontend Developer | WebVibe (2020 - 2022)
+- Designed responsive interfaces and mobile-friendly components with React and CSS.
+Education:
+Bachelor of Arts in Interactive Media and Design (2020)

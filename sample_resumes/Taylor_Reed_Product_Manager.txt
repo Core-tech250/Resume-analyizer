@@ -1,0 +1,17 @@
+Taylor Reed - Technical Product Manager
+Summary:
+Technical product manager with 6 years leading cross-functional squads, sprint planning, and user experience.
+Core Competencies:
+- Product Strategy, Agile / Scrum Methodology, Roadmap Planning, User Story Mapping
+- Tools: JIRA, Confluence, Figma, Notion, Google Analytics, Mixpanel
+- Technical Fluency: High-level understanding of APIs, SQL data querying, SaaS architectures
+Experience:
+Senior Product Manager | Elevate Tech (2022 - Present)
+- Defined product roadmap and led 2 engineering pods delivering quarterly feature releases.
+- Conducted user interviews, customer discovery sessions, and synthesized requirements for engineering.
+- Tracked conversion funnels, KPIs, and reduced customer churn by 18%.
+Product Owner | FinStream (2019 - 2022)
+- Managed backlog, sprint grooming, and stakeholder alignment across international teams.
+Education:
+Master of Business Administration (MBA) (2019)
+Bachelor of Business Administration (2017)
