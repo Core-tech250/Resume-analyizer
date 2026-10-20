@@ -3,9 +3,39 @@
 [![CI - Resume Shortlisting System](https://github.com/Core-tech250/Resume-analyizer/actions/workflows/ci.yml/badge.svg)](https://github.com/Core-tech250/Resume-analyizer/actions)
 ![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)
 ![Status](https://img.shields.io/badge/status-Production%20Ready-success.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
+![License](https://img.shields.io/badge/copyright-All%20Rights%20Reserved-red.svg)
 
-> **A decision-support platform that ranks resumes against a job profile and keeps HR firmly in control of interviews and the final hiring decision.**
+> **An enterprise decision-support platform that ranks resumes against a job profile and keeps HR firmly in control of interviews and the final hiring decision.**
+
+---
+
+## 📸 Solution Showcase & Visual Walkthrough
+
+### 1. Recruiter Dashboard & 4-Factor Matching Score
+Candidates are ranked based on demonstrated qualifications without viewing personal identifiers, institutional names, or demographics. Each applicant receives an interactive **4-Factor Breakdown (Skills 40%, Experience 30%, Projects 20%, Education 10%)** and verified requirement badges.
+
+![Recruiter Dashboard](docs/screenshots/dashboard_shortlist.png)
+
+---
+
+### 2. Evidence-Grounded Explainability & Tailored Interview Guide
+The system transparently breaks down verified strengths, identifies competency gaps, and dynamically generates customized technical and architecture questions for each candidate.
+
+![Explainability & Interview Questions](docs/screenshots/explainability_interview.png)
+
+---
+
+### 3. Live Algorithmic Bias Mitigation Test (0.00% Score Variance)
+Guarantees candidates from regional or non-prestigious institutions receive strictly impartial evaluations. When evaluating identical resumes where only candidate names, email domains, and college names vary (e.g. Stanford University vs. State Regional College), the scoring engine produces **0.0000% score variance**.
+
+![Bias Verification Test](docs/screenshots/bias_verification.png)
+
+---
+
+### 4. Empirical Benchmark Evaluation (90.0% Recruiter Agreement)
+Tested against **60 labeled ground-truth resumes** across 3 distinct technical disciplines, achieving **90.0% Top-10 agreement** (beating the $\ge 80\%$ target) and a near-perfect **0.984 Spearman rank correlation**.
+
+![Empirical Benchmark](docs/screenshots/empirical_benchmark.png)
 
 ---
 
@@ -128,32 +158,7 @@ pytest tests/resume_shortlister -v
 
 ---
 
-## 7. Project Structure
+## 7. Intellectual Property & Copyright Notice
 
-```text
-Resume-analyizer/
-├── .github/workflows/ci.yml       # GitHub Actions automated CI
-├── Dockerfile                     # Multi-stage production container
-├── docker-compose.yml             # Container orchestration
-├── sample_resumes/                # 5 diverse candidate resumes (PDF, DOCX, TXT)
-├── src/resume_shortlister/
-│   ├── config.py                  # Pydantic v2 application settings
-│   ├── anonymizer/                # Redaction & skill synonym dictionary
-│   ├── auth/                      # Multi-company tenant workspaces & RBAC
-│   ├── cache/                     # Embedding cache & batch processor
-│   ├── db/                        # SQLAlchemy database models & auto-migrations
-│   ├── evaluation/                # 60-resume benchmark & metrics engine
-│   ├── explainability/            # Strengths/gaps & interview generator
-│   ├── parsers/                   # PDF, DOCX, OCR, structured extractor
-│   ├── privacy/                   # Data retention purge & safe logger
-│   ├── ranking/                   # Multi-factor scorer & cosine similarity ranker
-│   ├── reporting/                 # CSV & ReportLab PDF report generators
-│   ├── api/                       # FastAPI backend & routes
-│   └── ui/                        # Streamlit recruiter dashboard
-├── tests/resume_shortlister/      # Unit & integration tests
-├── run_api.py                     # 1-click backend launcher
-├── run_ui.py                      # 1-click frontend launcher
-├── run_evaluation.py              # 1-click evaluation benchmark CLI
-├── requirements.txt               # Complete dependencies
-└── README.md                      # Complete project documentation
-```
+**Copyright © 2026 Core-tech250. All Rights Reserved.**  
+This repository and its documentation are published for demonstration, portfolio, and evaluation purposes only. Unauthorized reproduction, commercial distribution, or cloning of the proprietary algorithms and source code is strictly prohibited without explicit written permission.
